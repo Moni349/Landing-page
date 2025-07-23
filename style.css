@@ -1,0 +1,137 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4a90e2;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a:hover {
+  color: #4a90e2;
+  font-weight: 500;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to right, #e0f7fa, #e1bee7);
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #2c3e50;
+}
+
+.hero p {
+  font-size: 18px;
+  margin: 20px 0;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.btn {
+  padding: 12px 28px;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 25px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #357ABD;
+}
+
+.services, .testimonials, .contact {
+  padding: 80px 10%;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f2f2f2;
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-box {
+  background-color: #e0f7fa;
+  padding: 25px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 15px;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background-color: #fafafa;
+  border-top: 1px solid #eee;
+  color: #777;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+}
